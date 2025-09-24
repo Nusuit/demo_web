@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-const API_URL = "http://localhost:3001/api/text"; // Đổi lại khi deploy
+const API_URL = "https://demo-web-vn1w.onrender.com/api/text";
 
 function App() {
   const [text, setText] = useState("");

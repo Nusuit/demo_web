@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { createRoot } from "react-dom/client";
 
-const API_URL = "https://your-backend-url.onrender.com/api/text"; // Đổi lại thành URL backend thật khi deploy
+const API_URL = "https://demo-web-vn1w.onrender.com/api/text"; // Đổi lại thành URL backend thật khi deploy
 
 function App() {
   const [text, setText] = useState("");

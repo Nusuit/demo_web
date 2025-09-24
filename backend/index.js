@@ -5,8 +5,13 @@ const app = express();
 app.use(
   cors({
     origin: ["http://localhost:5173", "https://demo-web-three-pi.vercel.app"],
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    allowedHeaders: ["Content-Type"],
+    credentials: false,
   })
 );
+// Đảm bảo preflight OPTIONS luôn trả về CORS header
+app.options("*", cors());
 
 app.use(express.json());
 
